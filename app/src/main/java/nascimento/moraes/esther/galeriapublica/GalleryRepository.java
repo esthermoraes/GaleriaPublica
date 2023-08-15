@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class GalleryRepository {
@@ -59,7 +60,6 @@ public class GalleryRepository {
             String name = cursor.getString(nameColumn);
             int dateAdded = cursor.getInt(dateAddedColumn);
             int size = cursor.getInt(sizeColumn);
-            BitmapDrawable Util;
             Bitmap thumb = Util.getBitmap(context, contentUri, w, h);
             // Stores column values and the contentUri in a local object
             // that represents the media file.
