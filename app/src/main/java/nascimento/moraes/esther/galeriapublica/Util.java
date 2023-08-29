@@ -32,6 +32,14 @@ public class Util {
         return noOfColumns;
     }
 
+    /*public static int calculateGridWidth(Context context, float nColumns) { // For example columnWidthdp=180
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        float screenWidthDp = displayMetrics.widthPixels;
+        int w = (int) (screenWidthDp / nColumns); // +0.5 for correct rounding to int.
+        return w;
+    }*/
+
+
     /**
      * Carrega um arquivo de imagem em um bitmap sem realizar qualquer tipo de escala.
      * @param imagePath caminho local de onde esta localizado o arquivo de imagem.
